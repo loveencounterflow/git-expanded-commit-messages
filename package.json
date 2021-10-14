@@ -11,6 +11,8 @@
   "dependencies": {
     "cnd": "^9.2.2",
     "guy": "^2.5.0",
-    "intertype": "^7.6.7"
+    "intertype": "^7.6.7",
+    "pkg-dir": "^6.0.1",
+    "to-width": "^1.1.0"
   }
 }

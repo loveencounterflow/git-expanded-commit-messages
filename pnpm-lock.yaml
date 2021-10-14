@@ -4,19 +4,45 @@ specifiers:
   cnd: ^9.2.2
   guy: ^2.5.0
   intertype: ^7.6.7
+  pkg-dir: ^6.0.1
+  to-width: ^1.1.0
 
 dependencies:
   cnd: 9.2.2
   guy: 2.5.0
   intertype: 7.6.7
+  pkg-dir: 6.0.1
+  to-width: 1.1.0
 
 packages:
+
+  /ansi-regex/5.0.1:
+    resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
+    engines: {node: '>=8'}
+    dev: false
+
+  /cnd/9.2.1:
+    resolution: {integrity: sha512-JszZtSlOCxkIvNPKpw1PmIcQUjYO+pBqVoKVH2STHLtG4JHHJ1NHowv39lhyxzlPxUTZk7pZ3qO7CfrfJ8ZSKw==}
+    hasBin: true
+    dev: false
 
   /cnd/9.2.2:
     resolution: {integrity: sha512-F+/H+7luk4fZkvN0+MT0I2nwn80YM/EtfMttNUFxENR50XJH4g0KgQevzeyEJ8B6t6l8Tb4Xti6QAksa8DmePA==}
     hasBin: true
     dependencies:
       jsx-number-format: 0.1.4
+    dev: false
+
+  /emoji-regex/8.0.0:
+    resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
+    dev: false
+
+  /find-up/6.2.0:
+    resolution: {integrity: sha512-yWHzMzXCaFoABSnFTCPKNFlYoq4mSga9QLRRKOCLSJ33hSkzROB14ITbAWW0QDQDyuzsPQ33S1DsOWQb/oW1yA==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dependencies:
+      locate-path: 7.0.0
+      path-exists: 5.0.0
     dev: false
 
   /guy/2.5.0:
@@ -35,6 +61,11 @@ packages:
       multimix: 5.0.0
     dev: false
 
+  /is-fullwidth-code-point/3.0.0:
+    resolution: {integrity: sha512-zymm5+u+sCsSWyD9qNaejV3DFvhCKclKdizYaJUuHA83RLjb7nSuGnddCHGv0hk+KY7BMAlsWeK4Ueg6EV6XQg==}
+    engines: {node: '>=8'}
+    dev: false
+
   /jsx-number-format/0.1.4:
     resolution: {integrity: sha512-uPc/Q90XqZoRE7Cu1OLFQB2cSrA2Dy8+okzPOtML8vbagNFDSipbndIPme+q0odBjEhL+wf3WH3Wo52was4Tsg==}
     dev: false
@@ -43,6 +74,83 @@ packages:
     resolution: {integrity: sha512-jJ1nvvQi6unW0WifjNPMIb64Byom0EXzSKWFYA++EpyjK3qv1J2pqeSoEJ61tGJoNG0GoNjPoeLYhxW16riZaA==}
     dev: false
 
+  /locate-path/7.0.0:
+    resolution: {integrity: sha512-+cg2yXqDUKfo4hsFxwa3G1cBJeA+gs1vD8FyV9/odWoUlQe/4syxHQ5DPtKjtfm6gnKbZzjCqzX03kXosvZB1w==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dependencies:
+      p-locate: 6.0.0
+    dev: false
+
   /multimix/5.0.0:
     resolution: {integrity: sha512-N9cdGSDDD7kxOV7R6e4iZqsHTZ4F4iiSDWqMcVqx4gEH6HBtRXav39Gj3fgT1YqvBcwPCQuf0Oa5R2cDaLWK8A==}
+    dev: false
+
+  /p-limit/4.0.0:
+    resolution: {integrity: sha512-5b0R4txpzjPWVw/cXXUResoD4hb6U/x9BH08L7nw+GN1sezDzPdxeRvpc9c433fZhBan/wusjbCsqwqm4EIBIQ==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dependencies:
+      yocto-queue: 1.0.0
+    dev: false
+
+  /p-locate/6.0.0:
+    resolution: {integrity: sha512-wPrq66Llhl7/4AGC6I+cqxT07LhXvWL08LNXz1fENOw0Ap4sRZZ/gZpTTJ5jpurzzzfS2W/Ge9BY3LgLjCShcw==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dependencies:
+      p-limit: 4.0.0
+    dev: false
+
+  /path-exists/5.0.0:
+    resolution: {integrity: sha512-RjhtfwJOxzcFmNOi6ltcbcu4Iu+FL3zEj83dk4kAS+fVpTxXLO1b38RvJgT/0QwvV/L3aY9TAnyv0EOqW4GoMQ==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dev: false
+
+  /pkg-dir/6.0.1:
+    resolution: {integrity: sha512-C9R+PTCKGA32HG0n5I4JMYkdLL58ZpayVuncQHQrGeKa8o26A4o2x0u6BKekHG+Au0jv5ZW7Xfq1Cj6lm9Ag4w==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dependencies:
+      find-up: 6.2.0
+    dev: false
+
+  /string-width/4.2.1:
+    resolution: {integrity: sha512-LL0OLyN6AnfV9xqGQpDBwedT2Rt63737LxvsRxbcwpa2aIeynBApG2Sm//F3TaLHIR1aJBN52DWklc06b94o5Q==}
+    engines: {node: '>=8'}
+    dependencies:
+      emoji-regex: 8.0.0
+      is-fullwidth-code-point: 3.0.0
+      strip-ansi: 6.0.1
+    dev: false
+
+  /strip-ansi/6.0.1:
+    resolution: {integrity: sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==}
+    engines: {node: '>=8'}
+    dependencies:
+      ansi-regex: 5.0.1
+    dev: false
+
+  /to-width/1.1.0:
+    resolution: {integrity: sha512-zN1F5YSsKkI8MW+JGOE3neo3SVGUODZhMqjiEV7a2LSaAFjUkN1hcsv7Y+PJSayxAJ6ZmppfQZc4TuOAW8wIwg==}
+    dependencies:
+      cnd: 9.2.1
+      string-width: 4.2.1
+      wcstring: 2.1.1
+    dev: false
+
+  /varsize-string/2.2.2:
+    resolution: {integrity: sha1-7xs7bHLbCDXqL4TN+R/sMMUgaIs=}
+    dev: false
+
+  /wcsize/1.0.0:
+    resolution: {integrity: sha1-qKLhXmqKdHkdulgPaaV9J+hQ6h4=}
+    dev: false
+
+  /wcstring/2.1.1:
+    resolution: {integrity: sha1-3tUtdFycceJNCkidKCbSKjZe0Gc=}
+    dependencies:
+      varsize-string: 2.2.2
+      wcsize: 1.0.0
+    dev: false
+
+  /yocto-queue/1.0.0:
+    resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
+    engines: {node: '>=12.20'}
     dev: false
