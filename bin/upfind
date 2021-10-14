@@ -1,5 +1,12 @@
 #!/bin/bash
-while [[ $PWD != / ]] ; do
-    find "$PWD"/ -maxdepth 1 "$@"
-    cd ..
-done
+
+home="$1"
+name="$2"
+
+cd "$home" || exit 1
+
+while [[ "$PWD" != / ]] ; do
+  find "$PWD"/ -maxdepth 1 -name "$name"
+  cd ..
+  done
+
