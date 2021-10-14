@@ -1,0 +1,6 @@
+#!/bin/bash
+home="$(realpath "$(realpath "${BASH_SOURCE[0]}" | xargs dirname)"/..)"
+cd "$home" || exit 1
+
+echo "$(node lib/main.js) $(cat $1)" > $1
+
