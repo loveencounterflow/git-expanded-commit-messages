@@ -1,4 +1,5 @@
 #!/bin/bash
+### thx to https://superuser.com/a/455739 ###
 
 home="$1"
 name="$2"
